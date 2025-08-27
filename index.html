@@ -100,13 +100,7 @@
 
     <div class="board-wrap">
       <canvas id="board" width="540" height="540" aria-label="Snake board" role="img"></canvas>
-      <div id="overlay" class="overlay" hidden>
-        <div>
-          <h2 id="ov-title">Game Over</h2>
-          <p id="ov-sub">Press R to restart or click the button.</p>
-          <button id="restart">Restart ↻</button>
-        </div>
-      </div>
+      
     </div>
 
     <div class="controls">
@@ -249,7 +243,6 @@
     function end(title, sub){
       running = false; gameOver = true; paused = false;
       ovTitle.textContent = title; ovSub.textContent = sub + ' Press R to restart.';
-      overlay.hidden = false;
     }
 
     // --- Controls ---
